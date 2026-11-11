@@ -2,6 +2,7 @@
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz de Sustentabilidade</title>
     <style>
         body {
@@ -180,11 +181,11 @@
 
             let texto = "";
             if (pontuacaoTotal >= 8) {
-                texto = `Pontuação: ${pontuacaoTotal}/9. **Parabéns!** Tens hábitos altamente ecológicos e és um verdadeiro defensor do planeta! 🌍💚`;
+                texto = `Pontuação: ${pontuacaoTotal}/9. <strong>Parabéns!</strong> Tens hábitos altamente ecológicos e és um verdadeiro defensor do planeta! 🌍💚`;
             } else if (pontuacaoTotal >= 5) {
-                texto = `Pontuação: ${pontuacaoTotal}/9. **Bom trabalho!** Estás no caminho certo, mas ainda há pequenos hábitos que podes melhorar para seres mais sustentável. 🌱`;
+                texto = `Pontuação: ${pontuacaoTotal}/9. <strong>Bom trabalho!</strong> Estás no caminho certo, mas ainda há pequenos hábitos que podes melhorar para seres mais sustentável. 🌱`;
             } else {
-                texto = `Pontuação: ${pontuacaoTotal}/9. **Atenção!** Os teus hábitos precisam de um empurrão verde. Pequenas mudanças diárias podem fazer uma grande diferença. 💡`;
+                texto = `Pontuação: ${pontuacaoTotal}/9. <strong>Atenção!</strong> Os teus hábitos precisam de um empurrão verde. Pequenas mudanças diárias podem fazer uma grande diferença. 💡`;
             }
 
             mensagemResultado.innerHTML = texto;
@@ -198,9 +199,7 @@
             carregarPergunta();
         }
 
-        // Iniciar o quiz na primeira pergunta
         carregarPergunta();
     </script>
-
 </body>
 </html>
